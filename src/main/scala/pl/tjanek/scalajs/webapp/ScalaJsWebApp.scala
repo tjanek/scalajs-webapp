@@ -2,6 +2,7 @@ package pl.tjanek.scalajs.webapp
 
 import scala.scalajs.js.JSApp
 import org.scalajs.jquery.jQuery
+import Conversions._
 
 object ScalaJsWebApp extends JSApp {
   def main() : Unit = {
@@ -18,6 +19,6 @@ object ScalaJsWebApp extends JSApp {
   }
 
   def addClickedMessage(): Unit = {
-    appendPar("You clicked the button!")
+    appendPar("You clicked the button!".hello())
   }
 }
