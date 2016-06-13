@@ -5,7 +5,8 @@
     <title>Sample ScalaJS Web Application</title>
 </head>
 <body>
-<button id="click-me-button" type="button">Click me!</button>
+
+<canvas id="myCanvas" width="578" height="200"></canvas>
 
 <!-- Include JavaScript dependencies -->
 <script type="text/javascript" src="./target/scala-2.11/sample-scala-js-web-application-jsdeps.js"></script>
@@ -13,9 +14,6 @@
 <script type="text/javascript" src="./target/scala-2.11/sample-scala-js-web-application-fastopt.js"></script>
 <script type="text/javascript">
     pl.tjanek.scalajs.webapp.ScalaJsWebApp().main();
-
-    var person = new Person('John');
-    console.log(person.toString());
 </script>
 </body>
 </html>
